@@ -54,9 +54,7 @@ An application that will run in the browser and feature dynamically updated HTML
 [![GitHub version](https://badge.fury.io/gh/fondofhats%2Fbadges.svg)](http://badge.fury.io/gh/fondofhats%2workday-scheuler)
 -->
 
-## Issues
-[![GitHub issues](https://img.shields.io/github/issues/fondofhats/workday-scheduler.svg)](https://GitHub.com/fondofhats/workday-scheduler/issues/)
-[![GitHub issues-closed](https://img.shields.io/github/issues-closed/fondofhats/workday-scheduler.svg)](https://GitHub.com/fondofhats/workday-scheduler/issues?q=is%3Aissue+is%3Aclosed)
+
 
 <br>
 <br>
