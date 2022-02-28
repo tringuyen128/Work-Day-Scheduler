@@ -1,12 +1,10 @@
 $(function () {});
   
-/* Declare Variables */
-var today = moment().format("dddd, MMMM Do");
+const Currentdate = moment().format("dddd, MMMM Do");
+const current = moment().format("H A");
 
-var now = moment().format("H A");
 
-/* planWorkday entries for each hour of the workday */
-var planWorkday = [
+let workTime = [
   { time: "9 AM", event: "" },
   { time: "10 AM", event: "" },
   { time: "11 AM", event: "" },
@@ -18,38 +16,37 @@ var planWorkday = [
   { time: "5 PM", event: "" },
 ];
 
-/* Local Storage check */
-var workEvents = JSON.parse(localStorage.getItem("workDay"));
-if (workEvents) {
-  planWorkday = workEvents;
+
+let eventWork = JSON.parse(localStorage.getItem("workDay"));
+if (eventWork) {
+  workTime = eventWork;
 }
 
-/* Current Day */
-$("#currentDay").text(today);
 
-/* Create rows */
-planWorkday.forEach(function(timeBlock, index) {
-	var timeLabel = timeBlock.time;
-	var blockColor = colorRow(timeLabel);
-	var row =
+$("#currentDay").text(Currentdate);
+
+workTime.forEach(function(timeBlock, index) {
+	const labelTime = timeBlock.time;
+	const blockColor = colorRow(labelTime);
+	const row =
 		'<div class="time-block" id="' +
 		index +
 		'"><div class="row no-gutters input-group"><div class="col-sm col-lg-1 input-group-prepend hour justify-content-sm-end pr-3 pt-3">' +
-		timeLabel +
+		labelTime +
 		'</div><textarea class="form-control ' +
 		blockColor +
 		'">' +
 		timeBlock.event +
 		'</textarea><div class="col-sm col-lg-1 input-group-append"><button class="saveBtn btn-block" type="submit"><i class="fas fa-save"></i></button></div></div></div>';
 
-	/* Adding rows to container div */
+
 	$(".container").append(row);
 });
 
-/* Color rows based on current time */
+
 function colorRow(time) {
-	var planNow = moment(now, "H A");
-	var planEntry = moment(time, "H A");
+	const planNow = moment(current, "H A");
+	const planEntry = moment(time, "H A");
 	if (planNow.isBefore(planEntry) === true) {
 		return "future";
 	} else if (planNow.isAfter(planEntry) === true) {
@@ -59,21 +56,21 @@ function colorRow(time) {
 	}
 }
 
-/* Save Events */
+
 $(".saveBtn").on("click", function() {
-	var blockID = parseInt(
+	const blockID = parseInt(
 		$(this)
 			.closest(".time-block")
 			.attr("id")
 	);
-	var userEntry = $.trim(
+	const userEntry = $.trim(
 		$(this)
 			.parent()
 			.siblings("textarea")
 			.val()
 	);
-	planWorkday[blockID].event = userEntry;
+	workTime[blockID].event = userEntry;
 
-	/* Set local storage */
-	localStorage.setItem("workDay", JSON.stringify(planWorkday));
+	
+	localStorage.setItem("workDay", JSON.stringify(workTime));
 });

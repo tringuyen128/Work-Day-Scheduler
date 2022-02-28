@@ -4,15 +4,6 @@ body {
     line-height: 1;
   }
   
-  textarea{
-    background: transparent;
-    border: none;
-    resize: none;
-    color: #000000;
-    border-left: 1px solid black;
-    padding: 10px;
-  }
-  
   .jumbotron {
     text-align: center;
     background-color: transparent;
@@ -20,53 +11,62 @@ body {
     border-radius: 0;
     border-bottom: 10px solid black;
   }
-  
-  .description{
-    white-space: pre-wrap;
+  textarea{
+    background: transparent;
+    border: none;
+    resize: none;
+    color: #2c2929;
+    border-left: 1px solid black;
+    padding: 10px;
   }
   
   .time-block{
     text-align: center;
     border-radius: 15px;
   }
+
+  .description{
+    white-space: pre-wrap;
+  }
   
   .row {
     white-space: pre-wrap;
     height: 80px;
-    border-top: 1px solid white;;
+    border-top: 1px solid rgb(247, 235, 235);;
   }
   
+  .present {
+    background-color: #8d6adf;
+    color: white;
+  }
+
   .hour {
-    background-color: #ffffff;
+    background-color: #faeded;
     color: #000000;
     border-top: 1px dashed #000000;
   }
   
   .past {
-    background-color: #d3d3d3;
-    color: white;
-  }
-  
-  .present {
-    background-color: #ff6961;
+    background-color: #635858;
     color: white;
   }
   
   .future {
-    background-color: #77dd77;
+    background-color: #2aa1cf;
     color: white;
   }
-  
-  .saveBtn {
-    border-left: 1px solid black;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    background-color: #06AED5;
-    color: white;
-  }
-  
+
   .saveBtn i:hover {
     font-size: 20px;
     transition: all .3s ease-in-out;
   }
+  .saveBtn {
+    border-left: 1px solid black;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #d55206;
+    color: white;
+  }
+  
+  
   
