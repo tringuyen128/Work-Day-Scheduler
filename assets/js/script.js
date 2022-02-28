@@ -2,8 +2,6 @@ $(function () {});
   
 const Currentdate = moment().format("dddd, MMMM Do");
 const current = moment().format("H A");
-
-
 let workTime = [
   { time: "9 AM", event: "" },
   { time: "10 AM", event: "" },
@@ -15,17 +13,13 @@ let workTime = [
   { time: "4 PM", event: "" },
   { time: "5 PM", event: "" },
 ];
-
-
 let eventWork = JSON.parse(localStorage.getItem("workDay"));
 if (eventWork) {
   workTime = eventWork;
 }
 
-
 $("#currentDay").text(Currentdate);
-
-workTime.forEach(function(timeBlock, index) {
+workTime.forEach((timeBlock, index) => {
 	const labelTime = timeBlock.time;
 	const blockColor = colorRow(labelTime);
 	const row =
@@ -38,11 +32,8 @@ workTime.forEach(function(timeBlock, index) {
 		'">' +
 		timeBlock.event +
 		'</textarea><div class="col-sm col-lg-1 input-group-append"><button class="saveBtn btn-block" type="submit"><i class="fas fa-save"></i></button></div></div></div>';
-
-
 	$(".container").append(row);
 });
-
 
 function colorRow(time) {
 	const planNow = moment(current, "H A");
@@ -56,8 +47,7 @@ function colorRow(time) {
 	}
 }
 
-
-$(".saveBtn").on("click", function() {
+$(".saveBtn").on("click", () => {
 	const blockID = parseInt(
 		$(this)
 			.closest(".time-block")
@@ -70,7 +60,5 @@ $(".saveBtn").on("click", function() {
 			.val()
 	);
 	workTime[blockID].event = userEntry;
-
-	
 	localStorage.setItem("workDay", JSON.stringify(workTime));
 });
