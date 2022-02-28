@@ -1,7 +1,6 @@
-# Work-Day-Scheduler
+<h1 align = "center">Work-Day-Scheduler</h1>
 
 
-## Requirements/Description
 ### Description
 Create a simple calendar application that allows a user to save events for each hour of the workday. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
 <br>
@@ -49,11 +48,7 @@ An application that will run in the browser and feature dynamically updated HTML
 
 <br>
 
-<!--
-## Version
-[![Version](https://badge.fury.io/gh/fondofhats%2workday-scheduler.svg)](https://badge.fury.io/gh/fondofhats%2wordday-scheduler)
-[![GitHub version](https://badge.fury.io/gh/fondofhats%2Fbadges.svg)](http://badge.fury.io/gh/fondofhats%2workday-scheuler)
--->
+
 
 
 
