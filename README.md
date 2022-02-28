@@ -2,7 +2,7 @@
 
 
 ### Description
-Create a simple calendar application that allows a user to save events for each hour of the workday. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+This project is a simple calendar application that allows a user able to save multiple plans for each hour of the workday. This app can run on the browser with dynamic functions of HTML, CSS, and Jquery.
 <br>
 ### Requirements
 #### User Story
@@ -31,7 +31,6 @@ SO THAT I can manage my time effectively<br>
 >> + THEN the saved events persist<br>
 
 <br>
-
 ## Installation
 
 An application that will run in the browser and feature dynamically updated HTML and CSS powered by JQuery. Application features polished UI and is responsive, ensuring adaptation to multiple screen sizes.
@@ -42,20 +41,9 @@ An application that will run in the browser and feature dynamically updated HTML
 <br>
 <br>
 ### Screenshot
-
 <img width="766" alt="image" src="https://user-images.githubusercontent.com/73785514/156072474-5a872604-00e5-4f82-a047-0079d7cf95e0.png">
-
-
-<br>
-
-
-
-
-
 <br>
 <br>
-
-
 ## Technologies
 
 * [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
