@@ -11,6 +11,7 @@ body {
     border-radius: 0;
     border-bottom: 10px solid black;
   }
+
   textarea{
     background: transparent;
     border: none;
@@ -22,7 +23,7 @@ body {
   
   .time-block{
     text-align: center;
-    border-radius: 15px;
+    border-radius: 15px; 
   }
 
   .description{
@@ -57,7 +58,7 @@ body {
   }
 
   .saveBtn i:hover {
-    font-size: 20px;
+    font-size: 60px;
     transition: all .3s ease-in-out;
   }
   .saveBtn {
@@ -69,4 +70,5 @@ body {
   }
   
   
+
   
