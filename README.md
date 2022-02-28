@@ -43,7 +43,8 @@ An application that will run in the browser and feature dynamically updated HTML
 <br>
 <br>
 ### Screenshot
-<img width="641" alt="Scheduler" src="https://user-images.githubusercontent.com/73785514/152061557-a736e404-bb5b-4809-a5b5-91ad5ef4a76a.png">
+
+<img width="766" alt="image" src="https://user-images.githubusercontent.com/73785514/156072474-5a872604-00e5-4f82-a047-0079d7cf95e0.png">
 
 
 <br>
